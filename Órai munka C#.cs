@@ -5,9 +5,9 @@ Console.WriteLine("Annyeonghaseyo!");
 Console.WriteLine("A téglalap kerülete és területe");
 Console.Write("Kérem az a oldalt");
 double a = double.Parse(Console.ReadLine());
-Console.Write("Kérem az a oldalt:");
+Console.Write("Kérem az b oldalt:");
 double b = double.Parse(Console.ReadLine());
-Console.WriteLine("A kerület:" + 2 * a + 2 * b);
+Console.WriteLine("A kerület:" +( 2 * a + 2 * b));
 double ker = 2 * a + 2 * b;
 double ter = a * b;
 Console.WriteLine($"A terület:{ter}");
@@ -24,4 +24,3 @@ else
     Console.WriteLine("A terület a nagyobb!");
 }
 Console.ReadKey();
-        
