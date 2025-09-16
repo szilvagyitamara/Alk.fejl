@@ -27,15 +27,14 @@ for (int i =1; i <=5;i++)
 {
     Console.WriteLine(i);
 }
-ez sorozatos lett 
-for (int i = 1; 1 <= 5; i++)
+for (int i = 1; i <= 5; i++)
 {
-    Console.WriteLine("Hajrá ZTE!!");
+    Console.WriteLine("Hajrá ZTE!");
+}
 
 for (int y = 1; y <= 3; y++)
 {
-    Console.WriteLine("Fuj Pest");
-}
+    Console.WriteLine("Fúj Pest!");
 }
 
 string[] nevek = { "Anna", "Béla", "Csaba" };
@@ -117,4 +116,5 @@ do
     i++;
 }
 while (i<szamok.Length);
+
 Console.WriteLine("A legkisebb szám ami van a listában:" + min);
