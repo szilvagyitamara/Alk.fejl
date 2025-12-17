@@ -4,84 +4,79 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp10
+namespace ConsoleApp12
 {
     internal class Program
     {
         static void Main(string[] args)
-        {
-            /* int i = 0;
-             do
-             {
-                 Console.WriteLine(i);
-                 i++;
-             }
-             while (i < 5);
-            int[] szamok = {12,5,8,-3,15,0 };
-            //kezdő minimum az első elem
-            int min = szamok[0];
-            //végig megyünk a tömbön for ciklussal
-            for (int i = 1; i < szamok.Length; i++)
+        {/*
+            Console.WriteLine("A téglalap kerülete és területe:");
+            Console.WriteLine("Kérem adja meg az A oldalt!");
+            int a = int.Parse(Console.ReadLine());
+            Console.WriteLine("Kérem adja meg a B oldalt");
+            int b = int.Parse(Console.ReadLine());
+            int ter = a * b;
+            int ker = 2 * (a + b);
+            Console.WriteLine($"A téglalap terulete: {ter}");
+            Console.WriteLine($"A téglalap kerulete: {ker}");
+            if (ter > ker)
             {
-                if (szamok[i] < min)
-                { 
-                    min = szamok[i];
-                }
+                Console.WriteLine("A területe a nagyobb");
             }
-            Console.WriteLine("A legkisebb szám:" + min);
+            else if (ker > ter)
+            {
+                Console.WriteLine("A kerülete a nagyobb!");
+            }
+            else
+            {
+                Console.WriteLine("A területe és kerülete egyenlő");
+            }
+         
+            Console.WriteLine("A négyzet kerülete és területe");
+            Console.WriteLine("Kérem az oldalt!");
+            int A = int.Parse(Console.ReadLine());
+            int ker = 4 * A;
+            int ter = A * A;
+            Console.WriteLine($"A téglalap kerülete: {ker}");
+            Console.WriteLine($"A téglalap területe: {ter}");
+            if (ter > ker)
+            {
+                Console.WriteLine("A területe a nagyobb");
+            }
+            else if (ker > ter)
+            {
+                Console.WriteLine("A kerülete a nagyobb!");
+            }
+            else
+            {
+                Console.WriteLine("A területe és kerülete egyenlő");
+            }
+             */
+            Console.WriteLine("A háromszög kerülete és területe!!");
+            Console.WriteLine("Kérem adja meg az A oldalt!");
+            int A = int.Parse(Console.ReadLine());
 
-            int[] szamok = { 12, 5, 8, -3, 15, 0 };
-            //kezdő minimum az első elem
-            int min = szamok[0];
-            //foreach ciklus minden elemen végig megy
-            foreach (int szam in szamok)
-            {
-                if (szam < min)
-                { 
-                    min= szam;
-                }
-            }
-            Console.WriteLine("A legkisebb szám:"+min);
+            Console.WriteLine("Kérem adja meg a B oldalt!");
+            int B = int.Parse(Console.ReadLine());
 
-            int[] szamok = { 12, 5, 8, -3, 15, 0 };
-            //kezdő minimum az első elem
-            int min = szamok[0];
-            int i = 1; //a 0. elemet már betettük a min-be
-            while (i < szamok.Length)
+            Console.WriteLine("Kérem adja meg a C oldalt!");
+            int C = int.Parse(Console.ReadLine());
+            int ker =A+B+C;
+            int ter =(A+B+C)/2;
+            Console.WriteLine($"A háromszög  kerülete: {ker}");
+            Console.WriteLine($"A háromszög területe: {ter}");
+            if (ter > ker)
             {
-                if (szamok[i] < min)
-                {
-                    min = szamok[i];
-                }
-                i++;
+                Console.WriteLine("A területe a nagyobb");
             }
-            Console.WriteLine("A legkisebb szám:"+min);
-            
-            int[] szamok = { 12, 5, 8, -3, 15, 0 };
-            int min = szamok.Min();
-            Console.WriteLine($"A legkisebb szám:{min}.");
-
-            int[] szamok = { 12, 5, 8, -3, 15, 0 };
-            int max = szamok[0];
-            for (int i = 1; i < szamok.Length; i++)
+            else if (ker > ter)
             {
-                if (szamok[i] > max)
-                { 
-                    max = szamok[i];
-                }
+                Console.WriteLine("A kerülete a nagyobb!");
             }
-            Console.WriteLine($"A legnagyobb szám: {max}.");*/
-
-            int[] szamok = { 12, 5, 8, -3, 15, 0 };
-            int max = szamok[0];
-            foreach (int szam in szamok)
+            else
             {
-                if (szam > max)
-                { 
-                    max= szam;
-                }
+                Console.WriteLine("A területe és kerülete egyenlő");
             }
-            Console.WriteLine($"A legnagyobb szám: {max}.");
         }
     }
 }
